@@ -50,7 +50,7 @@ function App() {
             <Route exact path="/about" element={<About mode = {mode}/>} />
             <Route
               exact
-              path="/"
+              path="/home"
               element={
                 <TextForm
                   heading="Try TextUtils - Word Counter, Character Counter, Remove extra spaces"
