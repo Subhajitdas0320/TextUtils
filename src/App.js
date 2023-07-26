@@ -3,8 +3,8 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import TextForm from "./components/TextForm";
 import Alert from "./components/Alert";
-import About from "./components/About";
-import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
+/* import About from "./components/About";
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom"; */
 
 function App() {
   const [mode, setMode] = useState("light");
@@ -42,25 +42,25 @@ function App() {
   };
   return (
     <>
-      <Router>
+      {/* <Router> */}
         <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode} />
         <Alert alert={alert} />
         <div className="container my-3">
-          <Routes>
+          {/* <Routes>
             <Route exact path="/about" element={<About mode = {mode}/>} />
             <Route
               exact
-              path="/home"
-              element={
+              path="/"
+              element={ */}
                 <TextForm
                   heading="Try TextUtils - Word Counter, Character Counter, Remove extra spaces"
                   showAlert={showAlert} mode = {mode}
                 />
-              }
+              {/* }
             />
-          </Routes>
+          </Routes> */}
         </div>
-      </Router>
+      {/* </Router> */}
     </>
   );
 }
