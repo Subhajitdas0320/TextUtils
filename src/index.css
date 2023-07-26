@@ -12,6 +12,6 @@ code {
     monospace;
 }
 
-.accordian-button::after{
-  filter: invert(1);
+.accordion-button::after {
+  filter: invert(1)
 }
